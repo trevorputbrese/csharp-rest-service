@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: immigration-rest-service
   namespace: global
-  description:  Immigraiton Rest Service
+  description:  Immigration Rest Service
   annotations:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=immigration"
 spec:
