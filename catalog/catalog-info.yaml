@@ -5,11 +5,11 @@ metadata:
   namespace: global
   description:  Immigration Rest Service
   annotations:
-    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=immigration"
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=immigration-rest-service"
 spec:
   type: service
   lifecycle: production
   owner: global-team
-  system: immigration
+  system: immigration-system
   providesApis:
     - global/immigration-rest-service-a6c5a207
