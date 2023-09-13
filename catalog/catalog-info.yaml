@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: csharp-rest-service
+  name: immigration-rest-service
   annotations:
-    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=csharp-rest-service"
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=immigration"
 spec:
   type: service
   lifecycle: experimental
   owner: default-team
   providesApis:
-    - global/csharp-rest-service-a6c5a207
+    - global/immigration-rest-service-a6c5a207
