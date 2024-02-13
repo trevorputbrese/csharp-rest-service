@@ -26,7 +26,7 @@ spec:
       type: openapi
       location:
         path: "/swagger/v1/swagger.json"  # The path to the api documentation
-      owner: global-team
+      owner: aiprt-team
       system: ai-analysis-system
       description: Rest_Svc
   env:
