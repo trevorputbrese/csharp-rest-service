@@ -1,15 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: immigration-rest-service
+  name: -rest-service
   namespace: global
-  description:  Immigration Rest Service
+  description:  AIPRT Rest Service
   annotations:
-    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=immigration-rest-service"
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=aiprt-rest-service"
 spec:
   type: service
   lifecycle: production
-  owner: global-team
-  system: immigration-system
+  owner: aiprt-team
+  system: ai-analysis-system
   providesApis:
-    - global/immigration-rest-service-a6c5a207
+    - global/aiprt-rest-service-a6c5a207

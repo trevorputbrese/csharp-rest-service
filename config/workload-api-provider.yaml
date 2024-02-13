@@ -2,14 +2,14 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: immigration-rest-service
+  name: aiprt-rest-service
   labels:
     apps.tanzu.vmware.com/workload-type: web
     # apps.tanzu.vmware.com/has-tests: "true"
-    app.kubernetes.io/part-of: immigration-rest-service
+    app.kubernetes.io/part-of: aiprt-rest-service
     tanzu.app.live.view: "true"
     tanzu.app.live.view.application.flavours: steeltoe
-    tanzu.app.live.view.application.name: immigration-rest-service
+    tanzu.app.live.view.application.name: aiprt-rest-service
     tanzu.app.live.view.application.actuator.port: "9090"
     apis.apps.tanzu.vmware.com/register-api: "true"
 spec:
@@ -27,7 +27,7 @@ spec:
       location:
         path: "/swagger/v1/swagger.json"  # The path to the api documentation
       owner: global-team
-      system: immigration-system
+      system: ai-analysis-system
       description: Rest_Svc
   env:
   - name: DOTNET_CLI_TELEMETRY_OPTOUT
