@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: -rest-service
-  namespace: global
+  name: airport-rest-service
+  namespace: aiprt
   description:  AIPRT Rest Service
   annotations:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=aiprt-rest-service"
@@ -12,4 +12,4 @@ spec:
   owner: aiprt-team
   system: ai-analysis-system
   providesApis:
-    - global/aiprt-rest-service-a6c5a207
+    - aiprt/aiprt-rest-service-6845e3ec
